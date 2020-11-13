@@ -1,0 +1,28 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100%;
+    
+    
+          
+}
+
+.container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: grey;
+    align-items: center;
+}
+.box{
+    width: 50%;
+    height: auto;
+    
+}
+.image{
+    justify-content: end;
+}
+.text{
+    justify-content: end;
+}
