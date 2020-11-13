@@ -1,28 +1,246 @@
-body{
-    font-family: Arial, Helvetica, sans-serif;
-    height: 100%;
-    
-    
-          
+*, ::before, ::after{
+    box-sizing: border-box;
+
 }
 
-.container{
-    width: 100%;
-    height: auto;
+body{
+    position: relative;
+    margin: 0;
+    overflow: hidden;
     display: flex;
+    height: 100vh;
     flex-direction: column;
-    justify-content: space-around;
-    background-color: grey;
-    align-items: center;
+    line-height: 1.5;
+    font-family: sans-serif;
+    font-size: 62.5%;
+    color: #f4f4f4;
+    background-color: #1d1e22;
 }
-.box{
-    width: 50%;
-    height: auto;
+
+
+.smooth{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    scroll-behavior: smooth;
+    overflow-y: scroll;
+    -ms-scroll-snap-points-y: revert;
+    scroll-snap-type: y mandatory;
+    justify-content: center;
+}
+
+
+.header {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    display: flex;
+    width: 100%;
+    min-height: 60px;
+    font-size: 0.7rem;
+    mix-blend-mode: luminosity;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: black;
+    
+
+
+}
+li{
+    color: white;
+}
+h1 {
+    font-size: 65px;
+    -webkit-text-stroke: 2px white;
+    text-shadow: 10px 10px 10px black;
+}
+
+
+.header ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+
+}
+
+.header ul li{
+    margin: 0 1em;
+    padding: 1em;
+
+}
+
+.header ul li a{
+    
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #f4f4f4;
+
+}
+
+.header ul li a::after{
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    content: '';
+    width: 0;
+    height: 3px;
+    transition: all 0.2s linear;
+}
+
+.header ul li a:hover::after{
+    width: 100%;
+    background-color: white;
+
+}
+.imgbar{
+    background-image:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.9)),
+    url("./alternative-21581_1920.jpg");
+    padding: 10em 0;
+    background-size: cover;
+    background-position: bottom;
+}
+.imgbar2{
+    background-image:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.9)),
+    url("./windmill-2066444_1920.jpg");
+    padding: 10em 0;
+    background-size: cover;
+    background-position: bottom;
     
 }
-.image{
-    justify-content: end;
+.imgbar3{
+    background-image:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.9)),
+    url("./wind-turbines-4723817_1280.png");
+    padding: 10em 0;
+    background-size: cover;
+    background-position: bottom;
+    
 }
-.text{
-    justify-content: end;
+.imgbar4{
+    background-image:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.9)),
+    url("./power-station-4139902_1280.png");
+    padding: 10em 0;
+    background-size: cover;
+    background-position: bottom;
+   
+}
+.bilde{
+    margin: 0 400px;
+    
+}
+.energy{
+    margin:  0 400px;
+}
+
+section{
+    position: relative;
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 1rem;
+    background-size: cover;
+    scroll-snap-align: start;
+    padding: 0 0px;
+    
+
+}
+#home, #video, #contact{
+    justify-content: center;
+    align-content: center;
+
+}
+h3{
+    font-size: 140%;
+}
+
+section h2 {
+    text-transform: uppercase;
+    font-size: 3.25rem;
+    font-weight: 900;
+    padding: 0.1em 0.4em;
+    color: #1d1e22;
+    background-color: #f4f4f4;
+    pointer-events: none;
+    user-select: none;
+}
+
+p {
+    font-size: 110%;
+
+}
+
+ul{
+    display: inline-block;
+    padding-left: 0;
+    text-align: left;
+}
+
+
+.responsive-iframe {
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    width: 50%;
+    height: 50%;
+}
+
+
+.toggle-button {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+@media (max-width: 800px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .toggle-button {
+        display: flex;
+    }
+
+    .navbar-links {
+        display: none;
+        width: 100%;
+    }
+
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar-links ul li {
+        text-align: center;
+    }
+
+    .navbar-links ul li a {
+        padding: .5rem 1rem;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
 }
