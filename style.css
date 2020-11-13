@@ -13,8 +13,8 @@ body{
     line-height: 1.5;
     font-family: sans-serif;
     font-size: 62.5%;
-    color: #f4f4f4;
-    background-color: #1d1e22;
+    color: black;
+    background-color:#fff;
 }
 
 
@@ -42,7 +42,7 @@ body{
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-color: black;
+    background-color: #333;
     
 
 
@@ -98,7 +98,7 @@ h1 {
     background-color: white;
 
 }
-.imgbar{
+/*.imgbar{
     background-image:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.9)),
     url("./alternative-21581_1920.jpg");
     padding: 10em 0;
@@ -128,7 +128,7 @@ h1 {
     background-size: cover;
     background-position: bottom;
    
-}
+}*/
 .bilde{
     margin: 0 400px;
     
@@ -167,7 +167,7 @@ section h2 {
     font-size: 3.25rem;
     font-weight: 900;
     padding: 0.1em 0.4em;
-    color: #1d1e22;
+    color: #fff;
     background-color: #f4f4f4;
     pointer-events: none;
     user-select: none;
@@ -184,14 +184,6 @@ ul{
     text-align: left;
 }
 
-
-.responsive-iframe {
-    position: absolute;
-    top: 25%;
-    left: 25%;
-    width: 50%;
-    height: 50%;
-}
 
 
 .toggle-button {
