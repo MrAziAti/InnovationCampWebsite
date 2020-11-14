@@ -93,14 +93,12 @@ h1 {
     font-size: 65px;
     -webkit-text-stroke: 2px white;  
 }
-.info{
-    width: 100%;
-    
+.totalt{
+    width: 50%;
+    flex-direction: column;
+    justify-content: flex-start;
 }
 
-.image{
-
-}
 .teknisk{
     width: 50%;
 }
