@@ -82,6 +82,7 @@ section{
     flex-flow: column;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     text-align: center;
     font-size: 1rem;
     background-size: cover;
@@ -93,10 +94,8 @@ h1 {
     font-size: 65px;
     -webkit-text-stroke: 2px white;  
 }
-.totalt{
+.info{
     width: 50%;
-    flex-direction: column;
-    justify-content: flex-start;
 }
 
 .teknisk{
