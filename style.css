@@ -101,7 +101,10 @@ h1 {
 .teknisk{
     width: 50%;
 }
-
+.image{
+    border-radius: 20px;
+    padding-top: 50px;
+}
 
 
 h3{
